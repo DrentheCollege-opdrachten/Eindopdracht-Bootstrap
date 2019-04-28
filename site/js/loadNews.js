@@ -1,24 +1,42 @@
+//the API link for all the news messages
 const API = 'https://newsapi.org/v2/everything?q=3d%20printer&apiKey=7d092e05191c4a83b7c7ba009e14e45e';
-const maxArticles = 20;
+const maxArticles = 10;
 
 $(document).ready(function() {
+
   fetch(API)
     .then(response => {
       return response.json()
     })
     .then(data => {
-      show_news(data);
+      return show_news(data);
     })
+    .catch((error) =>{
+      alert(`There was an error in the API key`)
+      return console.error(error);
+    });
 });
 
 function show_news(newsJSON) {
   let articles = newsJSON.articles;
   let newsCol = [];
   let index = 0;
+  /////////////////////// ERROR IF THERE IS NO NEWS ABOUT 3D-PRINTERS ///////////////////////
+  if (articles.length === 0) {
+    let err = document.createElement("div");
 
-  console.log(articles)
+    let errMSG = `<div class="jumbtron">
+                    <h1> er zijn geen berichten in de laatste maand</h1>
+                  </div>`
+
+    err.innerHTML = errMSG;
+
+    document.getElementById('news').appendChild(err)
+    console.error("geen nieuws berichten beschikbaar");
+    return;
+  }
+/////////////////////// MAKING THE ARRAY OF NEWS MESSAGES AS A STRING ///////////////////////
   while(newsCol.length < maxArticles) {
-    console.log(index);
     if (articles.length <= index) {
       break;
     }
@@ -27,22 +45,22 @@ function show_news(newsJSON) {
     }
     index++
   }
-  for (var i = 0; i < newsCol.length; i++) {
+/////////////////////// CREATING A NEW DIV FOR THE NEWS ARTICLES ///////////////////////
     let newsMSG = document.createElement("div");
-
-    newsMSG.className += "piet"
-    newsMSG.innerHTML = newsCol[i];
-    let id = Math.round(i/2)
-    document.getElementsByClassName(`row`)[0].appendChild(newsMSG)
-  }
-  console.log(newsCol);
+    newsMSG.className += "row justify-content-center"
+/////////////////////// TRANSFORMING THE ARRAY OF NEWS MESSAGES TO A SINGLE STRING ///////////////////////
+    let MSG = createFullMsg(newsCol);
+    newsMSG.innerHTML = MSG;
+/////////////////////// DISPLAYING THE NEWS ARTICLICLES ///////////////////////
+    document.getElementById('news').appendChild(newsMSG)
 }
 
 function makeNewsContentDiv (article) {
   let content = article.content.split("…")[0] + "…";
   let date = article.publishedAt.split("T")[0];
+/////////////////////// MAKING THE STRING TO PUT IN THE newsCol ARRAY ///////////////////////
   let newsCard = `
-    <div class="card col-lg-4 col-md-5 col-sml-8">\n
+    <div class="card col-md-5 col-sml-8 newsCard">\n
       <img class="card-img-top" src="${article.urlToImage}" alt="${article.title}">\n
       <div class="card-body">\n
         <h5 class="card-title">${article.title}</h5>\n
@@ -54,4 +72,14 @@ function makeNewsContentDiv (article) {
   `
 
   return newsCard;
+}
+/////////////////////// MAKING THE STRING TO DISPLAY ///////////////////////
+function createFullMsg(arr) {
+  let msg = "";
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] !== undefined && arr[i] !== null) {
+      msg += arr[i] + "\n"
+    }
+  }
+  return msg;
 }

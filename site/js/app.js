@@ -26,7 +26,6 @@
     }
 
     if (veldenCorrect === 2) {
-      // TODO: redirect to the home page
       console.log("ALL FIELDS CORRECT");
       ev.preventDefault();
       window.location.replace('./Homepage.html')

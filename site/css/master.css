@@ -87,3 +87,9 @@ body {
 img {
   margin-top: -1px;
 }
+/* NEWS */
+.newsCard {
+  background-color: #efedef;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}

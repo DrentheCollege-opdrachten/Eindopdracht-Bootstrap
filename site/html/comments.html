@@ -12,7 +12,7 @@
        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
          <div class="container-fluid">
            <!-- LOGO -->
-           <a href="Homepage.html" class="navbar-brand">
+           <a href="./Homepage.html" class="navbar-brand">
              <img src="../img/logo.jpg" id="logo" height="90px">
            </a>
            <!-- NAVBAR TOGGELLER -->
@@ -25,14 +25,13 @@
              <ul class="navbar-nav ml-auto">
                <!-- hoofdmenu -->
                <li class="nav-item active">
-                 <a href="../homepage.html" class="nav-link"> Home </a>
+                 <a href="./homepage.html" class="nav-link"> Home </a>
                </li class="nav-item">
                <!-- geschiedenis -->
                <li class="nav-item">
                  <a href="./info.html#geschiedenis" class="nav-link"> Geschiedenis </a>
                </li class="nav-item">
                <!-- soorten printers -->
-               <!-- TODO: DROPDOWN MENU MAKEN -->
                <li class="nav-item dropdown">
                  <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown"> Soorten </a>
                  <div class="dropdown-menu">
@@ -80,9 +79,8 @@
             <input type="text" class="form-control" placeholder="Onderwerp" id="ondrwrp">
           </div>
           <div id="comment_in" class="form-label-group col-lg-4 col-md-6 col-sm-12" style="margin: 1px;">
-
-            <textarea name="comments" rows="5" cols="80" class="form-control" placeholder="Comment" style="margin: 1px;" id="txtarea"></textarea>
-            <button type="button" name="button" class="btn btn-primary" onclick="commitComment()"> klik om de comment te versturen.</button>
+            <textarea name="comments" rows="5" cols="80" class="form-control" placeholder="reactie" style="margin: 1px;" id="txtarea"></textarea>
+            <button type="button" name="button" class="btn btn-primary" id="commit"> klik om de comment te versturen.</button>
           </div>
 
         </form>
@@ -90,10 +88,9 @@
     <hr>
 
     <!-- COMMENTS -->
-    <div class="row" style="margin: 15px;">
-      <!-- comment1 -->
-      <div class="container-fluid">
-        <div class="card col-lg-4 col-md-6 col-sm-12" style="margin: 7.5px; background-color: #fafafa">
+      <div class="container-fluid row justify-content-center" style="margin-left: 15px;">
+        <!-- comment1 -->
+        <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-12" style="margin: 7.5px; background-color: #fafafa">
           <div class="comment">
             <h6 class="card-title">Michel Gerding</h6>
             <h6 class="card-subtitle text-muted">de website</h6>
@@ -103,7 +100,17 @@
             </div>
           </div>
           <!-- comment2 -->
-          <div class="card col-lg-4 col-md-6 col-sm-12" style="margin: 7.5px; background-color: #fafafa">
+          <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-12" style="margin: 7.5px; background-color: #fafafa">
+            <div class="comment">
+              <h6 class="card-title">Hans Anders</h6>
+              <h6 class="card-subtitle text-muted">de website</h6>
+              <p class="card-text cmd_text">dit is een comment met wat lorum ipsum erin.<br> Phasellus porta sagittis lectus porta condimentum.
+                Praesent laoreet justo posuere euismod pellentesque. Suspendisse dignissim luctus diam non fermentum.
+                Praesent suscipit, augue sodales porta interdum, sem risus sagittis metus, vel ultrices ipsum ante vitae risus.</p>
+              </div>
+            </div>
+          <!-- comment3 -->
+          <div class="card col-xl-3 col-lg-4 col-md-5 col-sm-11" style="margin: 7.5px; background-color: #fafafa">
             <div class="comment">
               <h6 class="card-title">Hans Anders</h6>
               <h6 class="card-subtitle text-muted">de website</h6>
@@ -113,7 +120,6 @@
               </div>
             </div>
           </div>
-
     </div>
 
 
@@ -122,6 +128,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> -->
     <script src="../js/app.js"></script>
+    <script src="../js/commitcomment.js"></script>
   </body>
  </html>
