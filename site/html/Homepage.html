@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/master.css">
+    <title>3D Printers</title>
+    <style media="screen">
+      .jumbotron {
+        background-color: #dbdcdd;
+        color: black;
+      }
+      .btn2 {
+        color: #444444;
+        border-color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+          <div class="container-fluid">
+            <!-- LOGO -->
+            <a href="Homepage.html" class="navbar-brand">
+              <img src="../img/logo.jpg" id="logo" height="90px">
+            </a>
+            <!-- NAVBAR TOGGELLER -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_mobile">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVBAR -->
+            <div class="collapse navbar-collapse" id="navbar_mobile">
+              <!-- ITEMS -->
+              <ul class="navbar-nav ml-auto">
+                <!-- hoofdmenu -->
+                <li class="nav-item active">
+                  <a href="./homepage.html" class="nav-link"> Home </a>
+                </li class="nav-item">
+                <!-- geschiedenis -->
+                <li class="nav-item">
+                  <a href="./info.html#geschiedenis" class="nav-link"> Geschiedenis </a>
+                </li class="nav-item">
+                <!-- soorten printers -->
+                <!-- TODO: DROPDOWN MENU MAKEN -->
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown"> Soorten </a>
+                  <div class="dropdown-menu">
+                    <a href="./info.html#sla" class="dropdown-item">Steriolithography</a>
+                    <a href="./info.html#dlp" class="dropdown-item">Digital Light Processing</a>
+                    <a href="./info.html#fdm" class="dropdown-item">Fused Deposition Modeling</a>
+                    <a href="./info.html#sls" class="dropdown-item">Selective Laser Sintering</a>
+                    <a href="./info.html#slm" class="dropdown-item">Selective Laser Melting</a>
+                    <a href="./info.html#ebm" class="dropdown-item">Electronic Beam Melting</a>
+                  </div>
+                </li class="nav-item">
+                <!-- veelvoorkomende fouten -->
+                <li class="nav-item">
+                  <a href="./info.html#fouten" class="nav-link"> Veelvoorkomende fouten </a>
+                </li class="nav-item">
+                <!-- gebruiks toepassingen -->
+                <li class="nav-item">
+                  <a href="./info.html#gebruik" class="nav-link"> Gebruiks toepassingen </a>
+                </li>
+                <!-- nieuws -->
+                <li class="nav-item">
+                  <a href="./news.html" class="nav-link"> Nieuws </a>
+                </li>
+                <!-- comments -->
+                <li class="nav-item">
+                  <a href="./comments.html" class="nav-link"> Comments </a>
+                </li>
+                <!-- inloggen -->
+                <li class="nav-item">
+                  <a href="./inloggen.html" class="nav-link"> Log In</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+<!-- CAROUSELL -->
+  <figure>
+    <div class="fixed-wrap">
+      <div class="fixed">
+        <div id="slides" class="carousel slide" data-ride="carousel" >
+          <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+            <li data-target="#slides" data-slide-to="4"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img src="../img/carousel/sla.jpg" alt="..." class="rounder images">
+              <div class="carousel-caption">
+                <h1 class="display-2">3D Printers</h1>
+                <h3>wat zijn het</h3>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../img/carousel/fdm4.png" alt="..." class="rounder images">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../img/carousel/sla2.jpg" alt="..." class="rounder images">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../img/carousel/fdm3.jpg" alt="..." class="rounder images">
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../img/carousel/fdm2.png" alt="..." class="rounder images">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </figure>
+
+<!-- JUMBOTRON -->
+      <div class="container-fluid">
+        <div class="row jumbotron">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead" style="">
+              dit is een website dat je alles over hun zal vertellen. bijvoorbeeld waar kun je ze voor gebruiken, wat zijn de meenst populaire soorten, veelvoorkomende fouten en hun geschiedenis.
+            </p>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <!-- <a href="./info.html"> -->
+              <a href="./info.html">
+                <button type="button" class="btn btn-lg btn-outline-secondary btn2" name="button">klik om te beginnen</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

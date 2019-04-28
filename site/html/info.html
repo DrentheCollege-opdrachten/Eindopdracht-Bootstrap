@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/master.css">
+    <title>3D Printers</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a href="Homepage.html" class="navbar-brand">
+          <img src="../img/logo.jpg" id="logo" height="90px">
+        </a>
+        <!-- NAVBAR TOGGELLER -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_mobile">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAVBAR -->
+        <div class="collapse navbar-collapse" id="navbar_mobile">
+          <!-- ITEMS -->
+          <ul class="navbar-nav ml-auto">
+            <!-- hoofdmenu -->
+            <li class="nav-item active">
+              <a href="./homepage.html" class="nav-link"> Home </a>
+            </li class="nav-item">
+            <!-- geschiedenis -->
+            <li class="nav-item">
+              <a href="./info.html#geschiedenis" class="nav-link"> Geschiedenis </a>
+            </li class="nav-item">
+            <!-- soorten printers -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown"> Soorten </a>
+              <div class="dropdown-menu">
+                <a href="./info.html#sla" class="dropdown-item">Steriolithography</a>
+                <a href="./info.html#dlp" class="dropdown-item">Digital Light Processing</a>
+                <a href="./info.html#fdm" class="dropdown-item">Fused Deposition Modeling</a>
+                <a href="./info.html#sls" class="dropdown-item">Selective Laser Sintering</a>
+                <a href="./info.html#slm" class="dropdown-item">Selective Laser Melting</a>
+                <a href="./info.html#ebm" class="dropdown-item">Electronic Beam Melting</a>
+              </div>
+            </li class="nav-item">
+            <!-- veelvoorkomende fouten -->
+            <li class="nav-item">
+              <a href="./info.html#fouten" class="nav-link"> Veelvoorkomende fouten </a>
+            </li class="nav-item">
+            <!-- gebruiks toepassingen -->
+            <li class="nav-item">
+              <a href="./info.html#gebruik" class="nav-link"> Gebruiks toepassingen </a>
+            </li>
+            <!-- nieuws -->
+            <li class="nav-item">
+              <a href="./news.html" class="nav-link"> Nieuws </a>
+            </li>
+            <!-- comments -->
+            <li class="nav-item">
+              <a href="./comments.html" class="nav-link"> Comments </a>
+            </li>
+            <!-- inloggen -->
+            <li class="nav-item">
+              <a href="./inloggen.html" class="nav-link"> Log In</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron" style="padding: 15px;">
+
+<!-- GESCHIEDENIS -->
+      <div id="geschiedenis">
+        <div class="jumbotron" class="header">
+          <hr>
+          <h1>Geschiedenis</h1>
+          <hr>
+        </div>
+          <div class="container-fluid">
+            <!-- START CARD 1 -->
+              <div class="card md-3 col-lg-12 col-md-12">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="../img/geschiedenis/mit.jpg" alt="de eerste 3D-printer van MIT" class="card-img" id="eerste-printer-mit-img" style="margin-left:-15px; margin-bottom: -1px;">
+                  </div>
+                  <div class=" col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-titel">De eerste 3D-printers</h5>
+                      <p class="card-text">
+                        Het commerciele 3D-printproces is ontstaan uit een aantal projecten van het
+                        Massachusetts institute of Technology (MIT) in het jaar 2000.
+                        Dit was een uitbreiding van Rapid prototyping waarbij het erom
+                        ging om zo snel mogelijk een prototype te maken.
+                      </p><hr>
+                      <p>
+                        Het MIT heeft na een succesvolle werking licenties overgedragen aan zes bedrijven voor het commercieel produceren en gebruiken van deze technologie.
+                        De eerste toepassing was met metaal als productiestof en de volgende stap was het produceren van modellen gemaakt van andere stoffen.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="../img/geschiedenis/1981.jpg" alt="" class="card-img" style="margin-left: 16px;">
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <!-- START CARD 2  -->
+              <div class="card md-3 col-lg-12 col-md-12">
+                <div class="row no-gutters">
+                  <div class="col-md-4" style="margin-left:0px;">
+                    <img src="../img/geschiedenis/reprap.jpg" alt="RepRap printer" class="card-img" style="margin-left: -15px;">
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title">De eerste comerciele 3D-printers</h5>
+                      <p class="card-text">
+                        In 2005 ontstond er in de VS een snelgroeiende markt voor hobbyisten en thuisgebruik door het beschikbaar komen van de open-source RepRap en Fab@Home projecten.
+                        De meeste 3D-printers voor thuisgebruik gebruiken technieken die daarvan afgeleid zijn
+                      </p>
+                      <hr>
+                      <p class="card-text">
+                        In 2005 ontstond er in de VS een snelgroeiende markt voor hobbyisten en thuisgebruik door het beschikbaar komen van de open-source RepRap en Fab@Home projecten.
+                        De meeste 3D-printers voor thuisgebruik gebruiken technieken die daarvan afgeleid zijn
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4" >
+                    <img src="../img/geschiedenis/fab@home.jpg" alt="fab@home versie 1" class="card-img" style="margin">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <hr>
+
+<!-- SOORTEN -->
+  <div id="soorten">
+    <div class="jumbotron" class="header">
+      <hr>
+      <h1> Soorten 3D-printers </h1>
+      <hr>
+    </div>
+    <!-- SLA -->
+    <div id="sla">
+      <div class="card md-3 col-md-12 col-sm-12">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img src="../img/soorten/sla.jpg" alt="Steriolithography" class="card-img"  style="margin-left: -15px;">
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title"> Steriolithography </h5>
+              <p class="card-text">
+                Het is een van de oudste manieren van 3D-printen maar word nu nog steeds gebruikt.
+                Net als alle andere manieren gebruikt het CAD-bestanden die zijn omgezet naar STL-bestanden.
+                Bij SLA maak je gebruik van Uv-licht om vloeibaar plastic te stollen. Het Uv-licht is gericht op dezelfde manier als een laser.
+                Dit is een hele precieze manier van printen.
+                Als de print klaar is hoef je het bijna niet meer af te werken maar het is zwak en het plastic is gevoelig voor licht.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- DLP -->
+      <div id="dlp">
+        <div class="card md-3 col-md-12 col-sm-12">
+          <div class="row no-gutters">
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title"> Digital Light Processing </h5>
+                <p class="card-text">
+                  DLP lijkt veel op SLA. Het werd bedacht in 1987 door Larry Hornbeck van Texas instruments.
+                  DLP werd erg populair bij de productie van projectoren.
+                  Het maakt gebruik van digitale microspiegels die zijn neergelegd op een halfgeleidercomputer chip.
+                  De technologie is geschikt voor filmprojectoren, mobiele telefoons en 3D-printen.
+                  Het werkt net als SLA met fotopolymeren. Het verschil is het soort van licht.
+                  Het materiaal dat voor het printen met DLP wordt gebruikt is een vloeibare kunststof hars.
+                  Het printen kan op een hoge snelheid want de laag hars kan binnen een paar seconden hard worden.
+                  De voordelen van deze manier zijn dat het snel, precies en robuust is. Ook is minder materiaal nodig.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="../img/soorten/dlp.jpg" alt="Digital Light Processing" class="card-img" style="margin-left: 15px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <!-- FDM  -->
+    <div id="fdm">
+      <div class="card md-3 col-md-12 col-sm-12">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img src="../img/soorten/fdm.jpg" alt="Fused Deposition Modeling" class="card-img"  style="margin-left: -15px;">
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title"> Fused Deposition Modeling </h5>
+              <p class="card-text">
+                  FDM werd in de eerste instantie ontwikkeld en geïmplementeerd door Scott Crump, de oprichter van Stratasys Ltd, in de jaren tachtig.
+                  Je kunt met FDM niet alleen functionele prototypes maken maar ook concept modellen en eindproducten.
+                  FDM print in lagen van onder naar boven door plastic te smelten.
+                  Om te printen word een CAD-bestand in lagen gesneden en berekend zo het pad van de printkop.
+                  Zodra een laag zich bindt aan de laag eronder dan wordt het hard en koelt hij af.
+                  De tijd dat het printen duurt ligt aan de grootte van het bestand.
+                  Een nadeel is dat het langer duurt dan sommige andere manieren. De voordelen zijn dat het maar weinig afwerking vereist en sterk is.
+                  Het is een van de makkelijkste manieren en is milieuvriendelijk.
+                  De meest voorkomende materialen om mee te printen zijn ABS (acrylonitril butadieën styreen) en PLA (polymekzuur).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- SLS -->
+    <div id="sls">
+      <div class="card md-3 col-md-12 col-sm-12">
+        <div class="row no-gutters">
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title"> Selective laser Sintering </h5>
+              <p class="card-text">
+                  SLS is een techniek die een laser gebruikt om massieve 3D-objecten te maken.
+                   Deze techniek is ontwikkeld door Carl Deckard, een student van de universiteit van Texas, en zijn professor Joe Beaman.
+                   SLS lijkt veel op SLA. Het belangrijkste verschil tussen deze 2 soorten is dat SLS een poedervormig materiaal gebruikt in plaats van hars.
+                   Het grootse verschil tussen SLS en 3D-printers zoals SLA en FDM is dat SLS geen ondersteuning nodig heeft omdat het voortdurend wordt omringt door het overige poeder.
+                   Het begint net als de eerdere manieren met een CAD-bestand dat wordt omgezet naar een STL-bestand met speciale software.
+                   Je kan met van alles printen zoals nylon, keramiek en glas en zelfs sommige metalen zoals aluminium, staal of zilver.
+                   Door de vele mogelijke materialen is dit een populaire manier om mee te printen. Het wordt meer gebruikt door bedrijven dan hobbyisten.
+                  Het is namelijk duur en deze manier maakt gebruik van krachtige lasers.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="../img/soorten/sls.jpg" alt="Selective laser Sintering" class="card-img"  style="margin-left: 15px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- SLM -->
+    <div id="slm">
+      <div class="card md-3 col-md-12 col-sm-12">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img src="../img/soorten/slm.jpg" alt="Selective Laser Melting" class="card-img"  style="margin-left: -15px;">
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title"> Selective Laser Melting </h5>
+              <p class="card-text">
+                SLM gebruikt ook CAD-bestanden. En net als SLS vormt het ook een 3D-object met een krachtige laser die metaalpoeder samen smelt.
+                SLM wordt vaak gezien als een subcategorie van SLS maar dat is niet waar. Want bij SLM wordt het materiaal volledig gesmolten in tegenstelling tot SLS.
+                SLM begon met een Duits onderzoek proces dat in 1995 werd georganiseerd door de Fraunhofer instituut voor lasertechnologie.
+                Net als bij andere manieren moet het CAD-bestand met speciale software in 2D-lagen worden gesneden.
+                Fijn metaalpoeder wordt over een plaat verspreid. Hierna laat de laser elke laag een patroon smelten.
+                Door de hoge energie die vrijkomt van de laser vormt er een vast object. Nadat de laag voltooid is gaat hij weer naar de volgende laag.
+                Metalen die je kan gebruiken zijn onder ander rvs, titanium, kobalt, chroom en aluminium. Deze methode is goed voor ingewikkelde voorwerpen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- EBM -->
+    <div id="ebm">
+      <div class="card md-3 col-md-12 col-sm-12">
+        <div class="row no-gutters">
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title"> Electron Beam Melting </h5>
+              <p class="card-text">
+                SLM gebruikt ook CAD-bestanden. En net als SLS vormt het ook een 3D-object met een krachtige laser die metaalpoeder samen smelt.
+                SLM wordt vaak gezien als een subcategorie van SLS maar dat is niet waar. Want bij SLM wordt het materiaal volledig gesmolten in tegenstelling tot SLS.
+                SLM begon met een Duits onderzoek proces dat in 1995 werd georganiseerd door de Fraunhofer instituut voor lasertechnologie.
+                Net als bij andere manieren moet het CAD-bestand met speciale software in 2D-lagen worden gesneden.
+                Fijn metaalpoeder wordt over een plaat verspreid. Hierna laat de laser elke laag een patroon smelten.
+                Door de hoge energie die vrijkomt van de laser vormt er een vast object. Nadat de laag voltooid is gaat hij weer naar de volgende laag.
+                Metalen die je kan gebruiken zijn onder ander rvs, titanium, kobalt, chroom en aluminium. Deze methode is goed voor ingewikkelde voorwerpen.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="../img/soorten/ebm.jpg" alt="Electron Beam Melting" class="card-img"  style="margin-left: 15px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+  </div>
+
+<!-- FOUTEN -->
+    <div id="fouten">
+
+
+    </div>
+
+<!-- GEBRUIK -->
+    <div id="gebruik">
+      
+
+    </div>
+
+  </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

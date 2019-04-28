@@ -1,0 +1,89 @@
+body {
+  background-color: #F8F9FA;
+}
+
+.rounder{
+  border-radius: 20px;
+}
+
+.images{
+  position: relative;
+  height: 500px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#slides {
+  /* padding: 15px; */
+  background-color: #f0f0f0;
+}
+
+
+/* NAVBAR */
+.navbar {
+  padding: 0.8em;
+}
+.nav-link {
+  font-size: 1em;
+}
+
+
+/* LOGIN FORM */
+/* x button*/
+.x-button {
+  margin-top: 25px;
+  margin-right: 35px;
+  font-size: 2em;
+}
+/* login form */
+#login {
+  vertical-align: middle;
+  top: 15%;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* COMMENTS */
+.comment {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+/* HEADER FOR GESCHIEDENIS */
+.header {
+  background: rgb(224, 226, 229);
+  color: rgb(44, 46, 49);
+  padding: 15px;
+  padding-left: 150px;
+}
+img {
+  margin-top: -1px;
+}
