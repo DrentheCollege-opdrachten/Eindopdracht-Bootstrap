@@ -1,7 +1,0 @@
-de bronnen die ik heb gebruikt zijn:
-    EP baas
-    https://en.wikipedia.org/wiki/3D_printing
-    http://3dprintingfromscratch.com/common/types-of-3d-printers-or-3d-printing-technologies-overview/
-    https://pinshape.com/blog/3-most-common-3d-printer-errors-and-fixes/
-    https://www.aniwaa.com/3d-printing-technologies-and-the-3d-printing-process/
-    http://makerlodge.mit.edu/maker-training/3d-printers
