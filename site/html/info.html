@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/master.css">
     <title>3D Printers</title>
   </head>
@@ -71,7 +73,7 @@
 
 <!-- GESCHIEDENIS -->
       <div id="geschiedenis">
-        <div class="jumbotron" class="header">
+        <div class="jumbotron header">
           <hr>
           <h1>Geschiedenis</h1>
           <hr>
@@ -81,7 +83,7 @@
               <div class="card md-3 col-lg-12 col-md-12">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="../img/geschiedenis/mit.jpg" alt="de eerste 3D-printer van MIT" class="card-img" id="eerste-printer-mit-img" style="margin-left:-15px; margin-bottom: -1px;">
+                    <img src="../img/geschiedenis/mit.jpg" alt="de eerste 3D-printer van MIT" class="card-img" id="eerste-printer-mit-img">
                   </div>
                   <div class=" col-md-4">
                     <div class="card-body">
@@ -99,7 +101,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <img src="../img/geschiedenis/1981.jpg" alt="" class="card-img" style="margin-left: 16px;">
+                    <img src="../img/geschiedenis/1981.jpg" alt="" class="card-img">
                   </div>
                 </div>
               </div>
@@ -108,7 +110,7 @@
               <div class="card md-3 col-lg-12 col-md-12">
                 <div class="row no-gutters">
                   <div class="col-md-4" style="margin-left:0px;">
-                    <img src="../img/geschiedenis/reprap.jpg" alt="RepRap printer" class="card-img" style="margin-left: -15px;">
+                    <img src="../img/geschiedenis/reprap.jpg" alt="RepRap printer" class="card-img">
                   </div>
                   <div class="col-md-4">
                     <div class="card-body">
@@ -125,17 +127,16 @@
                     </div>
                   </div>
                   <div class="col-md-4" >
-                    <img src="../img/geschiedenis/fab@home.jpg" alt="fab@home versie 1" class="card-img" style="margin">
+                    <img src="../img/geschiedenis/fab@home.jpg" alt="fab@home versie 1" class="card-img">
                   </div>
                 </div>
               </div>
           </div>
         </div>
-        <hr>
 
 <!-- SOORTEN -->
   <div id="soorten">
-    <div class="jumbotron" class="header">
+    <div class="jumbotron header">
       <hr>
       <h1> Soorten 3D-printers </h1>
       <hr>
@@ -247,7 +248,7 @@
       <div class="card md-3 col-md-12 col-sm-12">
         <div class="row no-gutters">
           <div class="col-md-3">
-            <img src="../img/soorten/slm.jpg" alt="Selective Laser Melting" class="card-img"  style="margin-left: -15px;">
+            <img src="../img/soorten/slm.jpg" alt="Selective Laser Melting" class="card-img">
           </div>
           <div class="col-md-9">
             <div class="card-body">
@@ -286,26 +287,125 @@
             </div>
           </div>
           <div class="col-md-3">
-            <img src="../img/soorten/ebm.jpg" alt="Electron Beam Melting" class="card-img"  style="margin-left: 15px;">
+            <img src="../img/soorten/ebm.jpg" alt="Electron Beam Melting" class="card-img">
           </div>
         </div>
       </div>
     </div>
     <br>
-    <hr>
   </div>
 
 <!-- FOUTEN -->
     <div id="fouten">
-
-
+      <div class="jumbotron header">
+        <hr>
+        <h1>Veel voorkomende fouten</h1>
+        <hr>
+      </div>
+      <!-- TODO: FINISH COMMON MISTAKES -->
+      <div id="stringing">
+        <div class="card md-3 col-md-12 col-sm-12">
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <img src="../img/fouten/stringing.png" alt="Stringing" class="card-img">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title"> Stringing </h5>
+                <p class="card-text">
+                  Bij stringing komt tijdens het verplaatsen een beetje filament uit de printkop.
+                  Hierdoor zitten er dunne lijnen tussen bepaalde gedeelte dit kan moeilijk zijn om te verwijderen.
+                  Een manier om dit te voorkomen is om in de software die van het 3D-model 2D-lagen maakt de optie filament terugtrekken aan te zetten.
+                  Dat zorgt ervoor dat het filament niet uit de printkop komt doordat het een stukje terug getrokken wordt.
+                  Wat ook een oorzaak kan zijn is een te hoge temperatuur waardoor het filament te vloeibaar wordt.
+                  Dat kan je oplossen door de temperatuur van de printkop te verlagen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="loose_print">
+        <div class="card md-3 col-md-12 col-sm-12">
+          <div class="row no-gutters">
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title"> Losse print </h5>
+                <p class="card-text">
+                  Als de print niet vast blijft zitten op het printbed dan kan je niet printen. De lagen komen niet goed vast te zitten.
+                  Een manier om dit te voorkomen is om ervoor te zorgen dat je printbed recht zit.
+                  Een mogelijke oorzaak is dat het bed te ver weg staat. Als je een verwarmd bed gebruikt dan kun je de temperatuur aanpassen.
+                  Heb je geen verwarmd bed dan kun je lijm gebruiken.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="../img/fouten/loose.jpg" alt="Print die is lodgekomen tijdens het printen" class="card-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="oververhitten">
+        <div class="card md-3 col-md-12 col-sm-12">
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <img src="../img/fouten/stringing.png" alt="Oververhitten" class="card-img">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title"> Oververhitten </h5>
+                <p class="card-text">
+                  het plastic oververhit raakt dan kan het niet snel genoeg afkoelen.
+                  Hierdoor kan het kromtrekken of niet goed vast blijven zitten.
+                  Je kan het voorkomen door de temperatuur van de printkop te verlagen waardoor het minder hoeft af te koelen.
+                  Je kan ook de snelheid van de ventilator aan de printkop verhogen waardoor het sneller afkoelt.
+                  Wat je ook kan doen is de snelheid van de printkop verlagen want dan heeft het meer tijd om af te koelen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      </div>
+          <!-- GEBRUIK -->
+          <div id="gebruik">
+            <div class="jumbotron header">
+              <hr>
+              <h1> Gebruiks toepassingen</h1>
+              <hr>
+            </div>
+            <div class="card md-3 col-md-12 col-sm-12">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="../img/oor.jpg" alt="3D-geprint oor" class="card-img">
+              </div>
+              <div class="col-md-9">
+                <div class="card-title"></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    3D-printens worden vooral gebruikt door ontwerpers die tijd willen besparen op het zelf maken van modellen.
+                    Dat gebeurt bij bijvoorbeeld de medische wetenschap, architectuur, ruimtevaart, mode en design.
+                    Ook de entertainmentindustrie zoals de game-industrie en filmindustrie horen bij de gebruikers.
+                    Ook kunstenaars gebruiken het om hun digitale creaties in een relatief korte tijd in 3D te maken.
+                    <br>
+                    In principe hoeft iemand met een eigen 3d-printer alleen de benodigde materialen en de 3d-tekening te regelen.
+                    Hij kan dan zelf het product door de printer laten maken.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <br>
+      </div>
+      </div>
     </div>
+  </div>
 
-<!-- GEBRUIK -->
-    <div id="gebruik">
-      
-
-    </div>
 
   </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
